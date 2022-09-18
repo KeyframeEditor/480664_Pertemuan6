@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/teksPresensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="200dp"
+        android:paddingBottom="25dp"
+        android:text="PRESENSI MANUAL"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/teksPresensi"
+        android:paddingHorizontal="35dp">
+
+        <EditText
+            android:id="@+id/teksTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Tanggal"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/teksWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teksTanggal"
+            android:hint="Masukan Waktu"
+            android:text=""
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPresensi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teksWaktu" />
+
+        <EditText
+            android:id="@+id/textFieldAlasan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/spinnerPresensi"
+            android:hint="Masukan Alasan" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@id/relative"
+
+        />
+
+</RelativeLayout>

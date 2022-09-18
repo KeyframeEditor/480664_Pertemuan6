@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TRPL Manual</string>
+    <string-array name="labels_array">
+        <item>Hadir Tepat Waktu</item>
+        <item>Terlambat</item>
+        <item>Ijin</item>
+        <item>Sakit</item>
+    </string-array>
+</resources>
