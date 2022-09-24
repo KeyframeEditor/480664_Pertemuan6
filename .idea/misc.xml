@@ -4,6 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudioProjects/Pertemuan5-alertDanDate/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Pertemuan6-menu/app/src/main/res/drawable/ic_baseline_perm_contact_calendar_24.xml" value="0.135" />
+        <entry key="..\:/AndroidStudioProjects/Pertemuan6-menu/app/src/main/res/layout/activity_login_page.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Pertemuan6-menu/app/src/main/res/layout/activity_main.xml" value="0.2212962962962963" />
+        <entry key="..\:/AndroidStudioProjects/Pertemuan6-menu/app/src/main/res/layout/fragment_daftar.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Pertemuan6-menu/app/src/main/res/layout/fragment_masuk.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Pertemuan6-menu/app/src/main/res/layout/fragment_test.xml" value="0.25" />
       </map>
     </option>
   </component>

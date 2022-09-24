@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentDaftar">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="35dp"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/teksNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teksNama"
+            android:hint="Keanu Reeves"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/teksEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/editTextNama"
+            android:paddingTop="10dp"
+            />
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="example@email.com"
+            android:layout_below="@+id/teksEmail"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/teksPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/editTextEmail"
+            android:paddingTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teksPassword"
+            android:hint="8 character password"
+            android:text=""
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:id="@+id/btnDaftar"
+            android:layout_below="@id/editTextPassword"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

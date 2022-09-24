@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +14,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.Objects;
 
@@ -26,18 +30,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        Begin Rule++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //Begin Rule++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Define elements
+        //Define elements
         btnSubmit = findViewById(R.id.btnSubmit);
         teksTanggal = findViewById(R.id.teksTanggal);
         teksWaktu = findViewById(R.id.teksWaktu);
         Spinner spinnerPresensi = findViewById(R.id.spinnerPresensi);
         textAlasan = findViewById(R.id.textFieldAlasan);
 
-//        Spinner Rules
+
+        //Spinner Rules
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.labels_array, android.R.layout.simple_spinner_item);
         spinnerPresensi.setAdapter(adapter);
         if (spinnerPresensi != null){
